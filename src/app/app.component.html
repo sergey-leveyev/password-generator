@@ -3,9 +3,13 @@
     <div class="box column is-one-third">
       <h1 class="title has-text-centered">Password Generator</h1>
 
-      <div class="field">
-        <label>Length</label>
-        <input class="input" (input)="onChangeLength($event.target.value)" />
+      <div class="field input-field">
+        <label>Please enter the password length</label>
+        <input
+          class="input"
+          (input)="onChangeLength($event.target.value)"
+          placeholder="How many characters do you want in the password?"
+        />
       </div>
 
       <div class="field">
